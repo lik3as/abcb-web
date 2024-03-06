@@ -1,5 +1,8 @@
 // project-imports
-import support from './support';
+import records from './records';
+import SAC from './SAC';
+import legal from './legal';
+import financial from './financial';
 
 // types
 import { NavItemType } from 'types/menu';
@@ -7,7 +10,7 @@ import { NavItemType } from 'types/menu';
 // ==============================|| MENU ITEMS ||============================== //
 
 const menuItems: { items: NavItemType[] } = {
-  items: [support]
+  items: [records, SAC, legal, financial]
 };
 
 export default menuItems;

@@ -27,7 +27,12 @@ const data: any = {
         title: "Dashboard",
         type: "item",
         icon: "dashboard",
-        url: "/dashboard/home"
+        url: "/dashboard/home",
+        chip: {
+          label: "9",
+          color: "primary",
+          size: "small",
+        }
       },
     ]
   }

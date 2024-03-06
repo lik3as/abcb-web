@@ -6,11 +6,11 @@ import { useSelector } from 'store';
 
 // type
 import { NavItemType } from 'types/menu';
-import { Home3, HomeTrendUp, Box1 } from 'iconsax-react';
+import { Home3, StatusUp, Box1 } from 'iconsax-react';
 
 const icons = {
   navigation: Home3,
-  dashboard: HomeTrendUp,
+  dashboard: StatusUp,
   components: Box1
 };
 
