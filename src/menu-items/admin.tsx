@@ -30,7 +30,7 @@ const admin: NavItemType = {
     {
       id: 'views-and-data',
       title: <FormattedMessage id="Visualização e Dados" />,
-      type: 'item',
+      type: 'collapse',
       url: '/sample-page',
       icon: icons.database,
       children: [ 
