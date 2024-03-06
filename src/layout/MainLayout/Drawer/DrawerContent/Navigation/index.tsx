@@ -68,6 +68,20 @@ const Navigation = () => {
             item={item}
           />
         );
+      case 'item':
+        return (
+          <NavGroup
+            key={item.id}
+            setSelectedItems={setSelectedItems}
+            setSelectedLevel={setSelectedLevel}
+            selectedLevel={selectedLevel}
+            selectedItems={selectedItems}
+            lastItem={lastItem!}
+            remItems={remItems}
+            lastItemId={lastItemId}
+            item={item}
+          /> 
+        );
       default:
         return (
           <Typography key={item.id} variant="h6" color="error" align="center">

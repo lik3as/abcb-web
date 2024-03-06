@@ -255,7 +255,7 @@ const NavGroup = ({ item, lastItem, remItems, lastItemId, setSelectedItems, sele
                   color={theme.palette.mode === ThemeMode.DARK ? 'textSecondary' : 'secondary.dark'}
                   sx={{ textTransform: 'uppercase', fontSize: '0.688rem' }}
                 >
-                  {item.title}
+                  {item.type === "group" ? item.title : void(0) /*Group Title*/}
                 </Typography>
                 {item.caption && (
                   <Typography variant="caption" color="secondary">
