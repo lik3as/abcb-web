@@ -1,8 +1,5 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 
-// project-imports
-import axios from 'utils/axios';
-
 // types
 import { MenuProps } from 'types/menu';
 
@@ -19,9 +16,26 @@ const initialState: MenuProps = {
 
 // ==============================|| SLICE - MENU ||============================== //
 
+const data: any = {
+  dashboard: {
+    id: "group-dashboard",
+    type: "item",
+    icon: "dashboard",
+    children: [
+      {
+        id: "dashboard",
+        title: "Dashboard",
+        type: "item",
+        icon: "dashboard",
+        url: "/dashboard/home"
+      },
+    ]
+  }
+}
+
 export const fetchMenu = createAsyncThunk('', async () => {
-  const response = await axios.get('/api/menu/dashboard');
-  return response.data;
+  const response = data; //await axios.get('/api/menu/dashboard');
+  return response;
 });
 
 const menu = createSlice({
