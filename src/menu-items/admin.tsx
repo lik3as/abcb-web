@@ -2,22 +2,16 @@
 import { FormattedMessage } from 'react-intl';
 
 // assets
-import { DocumentCode2, I24Support, Driving, TaskSquare, TrendUp, TableDocument, DocumentText, UserCirlceAdd } from 'iconsax-react';
+import { Graph, Setting2, Data2 } from 'iconsax-react';
 
 // type
 import { NavItemType } from 'types/menu';
 
 // icons
 const icons = {
-  samplePage: DocumentCode2,
-  documentation: I24Support,
-  roadmap: Driving,
-  monthlyReturns: TaskSquare,
-  monthlyTransfer: TrendUp,
-  database: TableDocument,
-  documents: DocumentText,
-  registerCustomer: UserCirlceAdd
-
+  viewsAndData: Graph,
+  systemConfig: Setting2,
+  networkInfra: Data2
 };
 
 // ==============================|| MENU ITEMS - SUPPORT ||============================== //
@@ -32,7 +26,7 @@ const admin: NavItemType = {
       title: <FormattedMessage id="Visualização e Dados" />,
       type: 'collapse',
       url: '/sample-page',
-      icon: icons.database,
+      icon: icons.viewsAndData,
       children: [ 
         {
           id: "customer-report",
@@ -66,7 +60,7 @@ const admin: NavItemType = {
       title: <FormattedMessage id="Configuração do Sistema" />,
       type: 'item',
       url: 'https://phoenixcoded.gitbook.io/able-pro/v/react/',
-      icon: icons.monthlyReturns,
+      icon: icons.systemConfig,
       external: true,
       target: true,
     },
@@ -75,7 +69,7 @@ const admin: NavItemType = {
       title: <FormattedMessage id="Rede e Infraestrutura" />,
       type: 'item',
       url: 'https://phoenixcoded.gitbook.io/able-pro/v/react/',
-      icon: icons.monthlyReturns,
+      icon: icons.networkInfra,
       external: true,
       target: true,
     }
