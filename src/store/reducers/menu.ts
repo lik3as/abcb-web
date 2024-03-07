@@ -19,15 +19,17 @@ const initialState: MenuProps = {
 const data: any = {
   dashboard: {
     id: "group-dashboard",
-    type: "item",
+    title: " ",
+    type: "group",
     icon: "dashboard",
-    children: [
-      {
+      children: [
+        {
         id: "dashboard",
         title: "Dashboard",
         type: "item",
         icon: "dashboard",
         url: "/dashboard/home",
+        breadcrumbs: true,
         chip: {
           label: "9",
           color: "primary",
