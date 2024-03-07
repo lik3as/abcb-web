@@ -5,10 +5,10 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-      command: yarn start
     ports:
       - "3000:3000"
     environment:
       - NODE_ENV=production
     expose:
       - "3000"
+    command: "yarn start"
