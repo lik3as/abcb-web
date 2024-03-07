@@ -10,9 +10,9 @@ import TicketsView from 'sections/widget/chart/TicketsView';
 import CustomersView from 'sections/widget/chart/CustomersView';
 
 // assets
-import { ArrowDown, ArrowUp, Book, Calendar, CloudChange, Wallet3 } from 'iconsax-react';
+import { ArrowDown, ArrowUp, UserTick, NoteRemove, UserRemove, TaskSquare } from 'iconsax-react';
 
-// ==============================|| DASHBOARD - DEFAULT ||============================== //
+// ==============================|| DASHBOARD - DEFUAULT ||============================== //
 
 const DashboardDefault = () => {
   const theme = useTheme();
@@ -25,8 +25,8 @@ const DashboardDefault = () => {
       <Grid item xs={12} sm={6} lg={3}>
         <EcommerceDataCard
           title="Clientes Ativos"
-          count="$3000"
-          iconPrimary={<Wallet3 />}
+          count="224.780"
+          iconPrimary={<UserTick />}
           percentage={
             <Typography color="primary" sx={{ display: 'flex', alignItems: 'center', gap: 0.5 }}>
               <ArrowUp size={16} style={{ transform: 'rotate(45deg)' }} /> 30.6%
@@ -39,9 +39,9 @@ const DashboardDefault = () => {
       <Grid item xs={12} sm={6} lg={3}>
         <EcommerceDataCard
           title="Clientes Inativos"
-          count="290+"
+          count="154.989"
           color="warning"
-          iconPrimary={<Book color={theme.palette.warning.dark} />}
+          iconPrimary={<UserRemove color={theme.palette.warning.dark} />}
           percentage={
             <Typography color="warning.dark" sx={{ display: 'flex', alignItems: 'center', gap: 0.5 }}>
               <ArrowDown size={16} style={{ transform: 'rotate(-45deg)' }} /> 30.6%
@@ -54,9 +54,9 @@ const DashboardDefault = () => {
       <Grid item xs={12} sm={6} lg={3}>
         <EcommerceDataCard
           title="Benefícios Ativos"
-          count="1,568"
+          count="226.245"
           color="success"
-          iconPrimary={<Calendar color={theme.palette.success.darker} />}
+          iconPrimary={<TaskSquare color={theme.palette.success.darker} />}
           percentage={
             <Typography color="success.darker" sx={{ display: 'flex', alignItems: 'center', gap: 0.5 }}>
               <ArrowUp size={16} style={{ transform: 'rotate(45deg)' }} /> 30.6%
@@ -69,9 +69,9 @@ const DashboardDefault = () => {
       <Grid item xs={12} sm={6} lg={3}>
         <EcommerceDataCard
           title="Benefícios Inativos"
-          count="$200"
+          count="156.378"
           color="error"
-          iconPrimary={<CloudChange color={theme.palette.error.dark} />}
+          iconPrimary={<NoteRemove color={theme.palette.error.dark} />}
           percentage={
             <Typography color="error.dark" sx={{ display: 'flex', alignItems: 'center', gap: 0.5 }}>
               <ArrowDown size={16} style={{ transform: 'rotate(45deg)' }} /> 30.6%

@@ -46,18 +46,18 @@ const ApexDonutChart = () => {
   const grey200 = theme.palette.secondary[200];
   const backColor = theme.palette.background.paper;
 
-  const [series] = useState([30, 26, 23, 21]);
+  const [series] = useState([40, 10, 15, 10]);
   const [options, setOptions] = useState<ChartProps>(pieChartOptions);
 
   useEffect(() => {
     const primaryMain = theme.palette.primary.main;
-    const primaryLighter = theme.palette.primary[100];
+    const errorMain = theme.palette.error.main;
     const warning = theme.palette.warning.main;
     const success = theme.palette.success.main;
 
     setOptions((prevState) => ({
       ...prevState,
-      colors: [primaryMain, warning, success, primaryLighter],
+      colors: [primaryMain, success, warning, errorMain],
       xaxis: {
         labels: {
           style: {
@@ -214,7 +214,7 @@ const TotalIncome = () => {
           <MainCard content={false} border={false} sx={{ bgcolor: 'background.default' }}>
             <Stack alignItems="flex-start" sx={{ p: 2 }} spacing={0.5}>
               <Stack direction="row" alignItems="center" spacing={1}>
-                <Dot componentDiv color="primary" />
+                <Dot componentDiv color="success" />
                 <Typography>Finalizados</Typography>
               </Stack>
               <Typography variant="subtitle1" sx={{ display: 'flex', alignItems: 'center', gap: 0.5 }}>
