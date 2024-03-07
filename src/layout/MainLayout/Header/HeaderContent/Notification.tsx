@@ -16,6 +16,7 @@ import {
   Popper,
   Stack,
   Typography,
+  Button,
   useMediaQuery
 } from '@mui/material';
 
@@ -25,7 +26,7 @@ import IconButton from 'components/@extended/IconButton';
 import Transitions from 'components/@extended/Transitions';
 
 // assets
-import { Gift, MessageText1, Notification, Setting2 } from 'iconsax-react';
+import { Add, Gift, MessageText1, Notification, Setting2 } from 'iconsax-react';
 import Avatar from 'components/@extended/Avatar';
 
 // types
@@ -116,9 +117,9 @@ const NotificationPage = () => {
               <ClickAwayListener onClickAway={handleClose}>
                 <MainCard elevation={0} border={false}>
                   <Stack direction="row" alignItems="center" justifyContent="space-between">
-                    <Typography variant="h5">Notifications</Typography>
+                    <Typography variant="h5">Notificações</Typography>
                     <Link href="#" variant="h6" color="primary">
-                      Mark all read
+                    <Button variant="outlined" color="secondary" endIcon={<Add style={{ transform: 'rotate(45deg)' }} />}><b>Fechar</b></Button>
                     </Link>
                   </Stack>
                   <List
