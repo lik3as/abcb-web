@@ -39,8 +39,8 @@ const HeaderContent = () => {
       {!downLG && settings}
       {downLG && <Box sx={{ width: '100%', ml: 1 }} />}
 
-      <Notification />
       <Message />
+      <Notification />
       {!downLG && <Profile />}
       {downLG && <MobileSection />}
     </>
