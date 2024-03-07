@@ -24,7 +24,7 @@ const pieChartOptions = {
     type: 'donut',
     height: 320
   },
-  labels: ['Total income', 'Total rent', 'Download', 'Views'],
+  labels: ['Visão Geral dos Clientes', 'Total rent', 'Download', 'Views'],
   legend: {
     show: false
   },
@@ -111,7 +111,7 @@ const TotalIncome = () => {
       <Grid container spacing={3}>
         <Grid item xs={12}>
           <Stack direction="row" alignItems="center" justifyContent="space-between" spacing={1}>
-            <Typography variant="h5">Total Income</Typography>
+            <Typography variant="h5">Visão Geral de Clientes</Typography>
             <IconButton
               color="secondary"
               id="wallet-button"
@@ -154,37 +154,17 @@ const TotalIncome = () => {
             <Stack alignItems="flex-start" sx={{ p: 2 }} spacing={0.5}>
               <Stack direction="row" alignItems="center" spacing={1}>
                 <Dot componentDiv />
-                <Typography>Item01</Typography>
+                <Typography>Ativos</Typography>
               </Stack>
 
               <Typography variant="subtitle1" sx={{ display: 'flex', alignItems: 'center', gap: 0.5 }}>
-                $23,876
+                224.780
                 <Typography
                   variant="caption"
                   color="text.secondary"
                   sx={{ fontWeight: 600, display: 'flex', alignItems: 'center', gap: 0.25 }}
                 >
-                  <ArrowUp size={14} /> +$76,343
-                </Typography>
-              </Typography>
-            </Stack>
-          </MainCard>
-        </Grid>
-        <Grid item xs={12} sm={6}>
-          <MainCard content={false} border={false} sx={{ bgcolor: 'background.default' }}>
-            <Stack alignItems="flex-start" sx={{ p: 2 }} spacing={0.5}>
-              <Stack direction="row" alignItems="center" spacing={1}>
-                <Dot componentDiv sx={{ bgcolor: 'primary.200' }} />
-                <Typography>Item02</Typography>
-              </Stack>
-              <Typography variant="subtitle1" sx={{ display: 'flex', alignItems: 'center', gap: 0.5 }}>
-                $23,876
-                <Typography
-                  variant="caption"
-                  color="text.secondary"
-                  sx={{ fontWeight: 600, display: 'flex', alignItems: 'center', gap: 0.25 }}
-                >
-                  <ArrowUp size={14} /> +$76,343
+                  <ArrowUp size={14} /> +30,6%
                 </Typography>
               </Typography>
             </Stack>
@@ -195,16 +175,16 @@ const TotalIncome = () => {
             <Stack alignItems="flex-start" sx={{ p: 2 }} spacing={0.5}>
               <Stack direction="row" alignItems="center" spacing={1}>
                 <Dot componentDiv color="warning" />
-                <Typography>Item03</Typography>
+                <Typography>Cancelados</Typography>
               </Stack>
               <Typography variant="subtitle1" sx={{ display: 'flex', alignItems: 'center', gap: 0.5 }}>
-                $23,876
+                154.989
                 <Typography
                   variant="caption"
                   color="text.secondary"
                   sx={{ fontWeight: 600, display: 'flex', alignItems: 'center', gap: 0.25 }}
                 >
-                  <ArrowUp size={14} /> +$76,343
+                  <ArrowUp size={14} /> +30,6%
                 </Typography>
               </Typography>
             </Stack>
@@ -214,17 +194,37 @@ const TotalIncome = () => {
           <MainCard content={false} border={false} sx={{ bgcolor: 'background.default' }}>
             <Stack alignItems="flex-start" sx={{ p: 2 }} spacing={0.5}>
               <Stack direction="row" alignItems="center" spacing={1}>
-                <Dot componentDiv color="success" />
-                <Typography>Item04</Typography>
+                <Dot componentDiv color="error" />
+                <Typography>Com Erro</Typography>
               </Stack>
               <Typography variant="subtitle1" sx={{ display: 'flex', alignItems: 'center', gap: 0.5 }}>
-                $23,876
+                104.699
                 <Typography
                   variant="caption"
                   color="text.secondary"
                   sx={{ fontWeight: 600, display: 'flex', alignItems: 'center', gap: 0.25 }}
                 >
-                  <ArrowUp size={14} /> +$76,343
+                  <ArrowUp size={14} /> +30,6%
+                </Typography>
+              </Typography>
+            </Stack>
+          </MainCard>
+        </Grid>
+        <Grid item xs={12} sm={6}>
+          <MainCard content={false} border={false} sx={{ bgcolor: 'background.default' }}>
+            <Stack alignItems="flex-start" sx={{ p: 2 }} spacing={0.5}>
+              <Stack direction="row" alignItems="center" spacing={1}>
+                <Dot componentDiv color="primary" />
+                <Typography>Para Exclusão</Typography>
+              </Stack>
+              <Typography variant="subtitle1" sx={{ display: 'flex', alignItems: 'center', gap: 0.5 }}>
+                1.465
+                <Typography
+                  variant="caption"
+                  color="text.secondary"
+                  sx={{ fontWeight: 600, display: 'flex', alignItems: 'center', gap: 0.25 }}
+                >
+                  <ArrowUp size={14} /> +30,6%
                 </Typography>
               </Typography>
             </Stack>

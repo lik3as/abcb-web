@@ -1,18 +1,13 @@
 // material-ui
 import { useTheme } from '@mui/material/styles';
-import { Grid, Stack, Typography } from '@mui/material';
+import { Grid, Typography } from '@mui/material';
 
 // project-imports
 import EcommerceDataCard from 'components/cards/statistics/EcommerceDataCard';
 import EcommerceDataChart from 'sections/widget/chart/EcommerceDataChart';
 
-import RepeatCustomerRate from 'sections/widget/chart/RepeatCustomerRate';
-import ProjectOverview from 'sections/widget/chart/ProjectOverview';
-import ProjectRelease from 'sections/dashboard/default/ProjectRelease';
-import AssignUsers from 'sections/widget/statistics/AssignUsers';
-
-import Transactions from 'sections/widget/data/Transactions';
-import TotalIncome from 'sections/widget/chart/TotalIncome';
+import TicketsView from 'sections/widget/chart/TicketsView';
+import CustomersView from 'sections/widget/chart/CustomersView';
 
 // assets
 import { ArrowDown, ArrowUp, Book, Calendar, CloudChange, Wallet3 } from 'iconsax-react';
@@ -29,7 +24,7 @@ const DashboardDefault = () => {
       {/* row 1 */}
       <Grid item xs={12} sm={6} lg={3}>
         <EcommerceDataCard
-          title="All Earnings"
+          title="Clientes Ativos"
           count="$3000"
           iconPrimary={<Wallet3 />}
           percentage={
@@ -43,7 +38,7 @@ const DashboardDefault = () => {
       </Grid>
       <Grid item xs={12} sm={6} lg={3}>
         <EcommerceDataCard
-          title="Page Views"
+          title="Clientes Inativos"
           count="290+"
           color="warning"
           iconPrimary={<Book color={theme.palette.warning.dark} />}
@@ -58,7 +53,7 @@ const DashboardDefault = () => {
       </Grid>
       <Grid item xs={12} sm={6} lg={3}>
         <EcommerceDataCard
-          title="Total task"
+          title="Benefícios Ativos"
           count="1,568"
           color="success"
           iconPrimary={<Calendar color={theme.palette.success.darker} />}
@@ -73,7 +68,7 @@ const DashboardDefault = () => {
       </Grid>
       <Grid item xs={12} sm={6} lg={3}>
         <EcommerceDataCard
-          title="Download"
+          title="Benefícios Inativos"
           count="$200"
           color="error"
           iconPrimary={<CloudChange color={theme.palette.error.dark} />}
@@ -87,30 +82,12 @@ const DashboardDefault = () => {
         </EcommerceDataCard>
       </Grid>
 
-      {/* row 2 */}
-      <Grid item xs={12} md={8} lg={9}>
-        <Grid container spacing={3}>
-          <Grid item xs={12}>
-            <RepeatCustomerRate />
-          </Grid>
-          <Grid item xs={12}>
-            <ProjectOverview />
-          </Grid>
-        </Grid>
-      </Grid>
-      <Grid item xs={12} md={4} lg={3}>
-        <Stack spacing={3}>
-          <ProjectRelease />
-          <AssignUsers />
-        </Stack>
-      </Grid>
-
       {/* row 3 */}
       <Grid item xs={12} md={6}>
-        <Transactions />
+        <CustomersView />
       </Grid>
       <Grid item xs={12} md={6}>
-        <TotalIncome />
+        <TicketsView />
       </Grid>
     </Grid>
   );
