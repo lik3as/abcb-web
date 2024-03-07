@@ -8,7 +8,7 @@ import { Box, useMediaQuery } from '@mui/material';
 import Search from './Search';
 import Message from './Message';
 import Profile from './Profile';
-import Localization from './Localization';
+import Settings from './Settings';
 import Notification from './Notification';
 import MobileSection from './MobileSection';
 import MegaMenuSection from './MegaMenuSection';
@@ -27,7 +27,7 @@ const HeaderContent = () => {
   const downLG = useMediaQuery((theme: Theme) => theme.breakpoints.down('lg'));
 
   // eslint-disable-next-line react-hooks/exhaustive-deps
-  const localization = useMemo(() => <Localization />, [i18n]);
+  const settings = useMemo(() => <Settings />, [i18n]);
 
   const megaMenu = useMemo(() => <MegaMenuSection />, []);
 
@@ -36,7 +36,7 @@ const HeaderContent = () => {
       {menuOrientation === MenuOrientation.HORIZONTAL && !downLG && <DrawerHeader open={true} />}
       {!downLG && <Search />}
       {!downLG && megaMenu}
-      {!downLG && localization}
+      {!downLG && settings}
       {downLG && <Box sx={{ width: '100%', ml: 1 }} />}
 
       <Notification />

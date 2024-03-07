@@ -77,7 +77,7 @@ const NotificationPage = () => {
         size="large"
         sx={{ color: 'secondary.main', bgcolor: open ? iconBackColorOpen : iconBackColor, p: 1 }}
       >
-        <Badge badgeContent={read} color="success" sx={{ '& .MuiBadge-badge': { top: 2, right: 4 } }}>
+        <Badge badgeContent={read} color="primary" sx={{ '& .MuiBadge-badge': { top: 2, right: 4 } }}>
           <Notification variant="Bold" />
         </Badge>
       </IconButton>

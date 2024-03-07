@@ -7,7 +7,7 @@ import { AppBar, Box, ClickAwayListener, Paper, Popper, Toolbar } from '@mui/mat
 // project-imports
 import Search from './Search';
 import Profile from './Profile';
-import Localization from './Localization';
+import Settings from './Settings';
 import IconButton from 'components/@extended/IconButton';
 import Transitions from 'components/@extended/Transitions';
 
@@ -92,7 +92,7 @@ const MobileSection = () => {
                 <AppBar color="inherit">
                   <Toolbar>
                     <Search />
-                    <Localization />
+                    <Settings />
                     <Profile />
                   </Toolbar>
                 </AppBar>

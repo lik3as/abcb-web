@@ -29,7 +29,7 @@ import AnimateButton from 'components/@extended/AnimateButton';
 import { DRAWER_WIDTH } from 'config';
 
 // assets
-import { Windows, ArrowRight3 } from 'iconsax-react';
+import { Sun1, ArrowRight3 } from 'iconsax-react';
 import cardBack from 'assets/images/widget/img-dropbox-bg.svg';
 import imageChart from 'assets/images/mega-menu/chart.svg';
 
@@ -70,7 +70,7 @@ const MegaMenuSection = () => {
         size="large"
         sx={{ color: 'secondary.main', bgcolor: open ? iconBackColorOpen : iconBackColor, ml: { xs: 0, lg: -2 }, p: 1 }}
       >
-        <Windows variant="Bulk" size={22} />
+        <Sun1 variant="Bulk" size={22} />
       </IconButton>
       <Popper
         placement="bottom"

@@ -11,7 +11,7 @@ import Transitions from 'components/@extended/Transitions';
 import useConfig from 'hooks/useConfig';
 
 // assets
-import { LanguageSquare } from 'iconsax-react';
+import { Setting2 } from 'iconsax-react';
 
 // types
 import { I18n, ThemeMode } from 'types/config';
@@ -58,7 +58,7 @@ const Localization = () => {
         size="large"
         sx={{ color: 'secondary.main', bgcolor: open ? iconBackColorOpen : iconBackColor, p: 1 }}
       >
-        <LanguageSquare variant="Bulk" size={26} />
+        <Setting2 variant="Bulk" size={26} />
       </IconButton>
       <Popper
         placement={matchesXs ? 'bottom-start' : 'bottom'}
