@@ -33,7 +33,6 @@ const SAC: NavItemType = {
       id: 'active-management',
       title: <FormattedMessage id="Gestão dos Ativos" />,
       type: 'collapse',
-      url: '/sample-page',
       icon: icons.activeMgmt,
       children: [
         {
