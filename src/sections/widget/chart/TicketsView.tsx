@@ -24,12 +24,12 @@ const pieChartOptions = {
     type: 'donut',
     height: 320
   },
-  labels: ['Visão Geral de Tickets', 'Total rent', 'Download', 'Views'],
+  labels: ['Ativos', 'Para Exclusão', 'Cancelados', 'Com Erro'],
   legend: {
     show: false
   },
   dataLabels: {
-    enabled: false
+    enabled: true
   }
 };
 

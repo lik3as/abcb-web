@@ -24,12 +24,12 @@ const pieChartOptions = {
     type: 'donut',
     height: 320
   },
-  labels: ['Visão Geral dos Clientes', 'Total rent', 'Download', 'Views'],
+  labels: ['Abertos', 'Finalizados', 'Pendentes', 'Aprovados'],
   legend: {
     show: false
   },
   dataLabels: {
-    enabled: false
+    enabled: true
   }
 };
 
@@ -80,7 +80,7 @@ const ApexDonutChart = () => {
       },
       theme: {
         mode: mode === ThemeMode.DARK ? 'dark' : 'light'
-      }
+      },
     }));
   }, [mode, primary, line, grey200, backColor, theme]);
 
