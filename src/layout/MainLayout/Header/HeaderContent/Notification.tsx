@@ -26,7 +26,7 @@ import IconButton from 'components/@extended/IconButton';
 import Transitions from 'components/@extended/Transitions';
 
 // assets
-import { Add, Gift, MessageText1, Notification, Setting2 } from 'iconsax-react';
+import { Add, Direct, MessageText1, Notification, Setting2 } from 'iconsax-react';
 import Avatar from 'components/@extended/Avatar';
 
 // types
@@ -138,14 +138,15 @@ const NotificationPage = () => {
                     }}
                   >
                     <ListItemButton>
-                      <ListItemAvatar>
-                        <Avatar type="filled">
-                          <Gift size={20} variant="Bold" />
-                        </Avatar>
+                      <ListItemAvatar sx={{display: "flex", justifyContent: "center", alignSelf: "start", marginTop: "8px"}}>
+                          <Direct size={24} variant="Bold" color="#4680FF" />
                       </ListItemAvatar>
                       <ListItemText
                         primary={
                           <Typography variant="h6">
+                            <Typography component="h5" variant="subtitle1">
+                              Carta de Cancelamento
+                            </Typography>{' '}
                             It&apos;s{' '}
                             <Typography component="span" variant="subtitle1">
                               Cristina danny&apos;s
