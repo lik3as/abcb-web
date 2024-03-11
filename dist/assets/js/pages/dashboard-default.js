@@ -164,64 +164,18 @@ function floatchart() {
         }
       }
     };
-    var chart = new ApexCharts(document.querySelector('#customer-rate-graph'), options5);
-    chart.render();
-    var options6 = {
-      chart: {
-        type: 'area',
-        height: 60,
-        stacked: true,
-        sparkline: { enabled: true }
-      },
-      colors: ['#4680FF'],
-      fill: {
-        type: 'gradient',
-        gradient: {
-          shadeIntensity: 1,
-          type: 'vertical',
-          inverseColors: false,
-          opacityFrom: 0.5,
-          opacityTo: 0
-        }
-      },
-      stroke: { curve: 'smooth', width: 2 },
-      series: [{ data: [5, 25, 3, 10, 4, 50, 0] }]
-    };
-    var chart = new ApexCharts(document.querySelector('#total-tasks-graph'), options6);
-    chart.render();
-    var options7 = {
-      chart: {
-        type: 'area',
-        height: 60,
-        stacked: true,
-        sparkline: { enabled: true }
-      },
-      colors: ['#DC2626'],
-      fill: {
-        type: 'gradient',
-        gradient: {
-          shadeIntensity: 1,
-          type: 'vertical',
-          inverseColors: false,
-          opacityFrom: 0.5,
-          opacityTo: 0
-        }
-      },
-      stroke: { curve: 'smooth', width: 2 },
-      series: [{ data: [0, 50, 4, 10, 3, 25, 5] }]
-    };
-    var chart = new ApexCharts(document.querySelector('#pending-tasks-graph'), options7);
-    chart.render();
+
+    /* Ticket Overview Options */
     var options8 = {
       chart: {
         height: 320,
         type: 'donut'
       },
-      series: [27, 23, 20, 17],
-      colors: ['#4680FF', '#E58A00', '#2CA87F', '#4680FF'],
+      series: [40, 10, 15, 10],
+      colors: ['#4680FF', '#13c2c2', '#e58a00', '#dc2626'],
       labels: ['Total income', 'Total rent', 'Download', 'Views'],
       fill: {
-        opacity: [1, 1, 1, 0.3]
+        opacity: [1, 1, 1, 1]
       },
       legend: {
         show: false
@@ -243,7 +197,7 @@ function floatchart() {
         }
       },
       dataLabels: {
-        enabled: false
+        enabled: true
       },
       responsive: [
         {
@@ -263,7 +217,63 @@ function floatchart() {
         }
       ]
     };
-    var chart = new ApexCharts(document.querySelector('#total-income-graph'), options8);
+    var chart = new ApexCharts(document.querySelector('#ticket-overview-graph'), options8);
+    chart.render();
+
+    /* Client Overview Options */
+    var options8 = {
+      chart: {
+        height: 320,
+        type: 'donut'
+      },
+      series: [40, 10, 15, 10],
+      colors: ['#4680FF', '#13c2c2', '#e58a00', '#dc2626'],
+      labels: ['Total income', 'Total rent', 'Download', 'Views'],
+      fill: {
+        opacity: [1, 1, 1, 1]
+      },
+      legend: {
+        show: false
+      },
+      plotOptions: {
+        pie: {
+          donut: {
+            size: '65%',
+            labels: {
+              show: true,
+              name: {
+                show: true
+              },
+              value: {
+                show: true
+              }
+            }
+          }
+        }
+      },
+      dataLabels: {
+        enabled: true
+      },
+      responsive: [
+        {
+          breakpoint: 480,
+          options: {
+            plotOptions: {
+              pie: {
+                donut: {
+                  size: '65%',
+                  labels: {
+                    show: true
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    };
+
+    var chart = new ApexCharts(document.querySelector('#client-overview-graph'), options8);
     chart.render();
   })();
 }
