@@ -11,7 +11,7 @@ services:
       - NODE_ENV=production
     expose:
       - "3000"
-    command: "gulp"    
+    command: "yarn run gulp"
     volumes:
-      - .:/app
-      - /app/node_modules
+      - .:/usr/src/app
+    container_name: "abcb"
