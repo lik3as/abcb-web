@@ -171,7 +171,7 @@ function floatchart() {
         height: 320,
         type: 'donut'
       },
-      series: [40, 10, 15, 10],
+      series: [40, 20, 25, 15],
       colors: ['#4680FF', '#13c2c2', '#e58a00', '#dc2626'],
       labels: ['Total income', 'Total rent', 'Download', 'Views'],
       fill: {
@@ -197,7 +197,11 @@ function floatchart() {
         }
       },
       dataLabels: {
-        enabled: true
+        enabled: true,
+        style: {
+          fontSize: "16px",
+          marginTop: "10px",
+        }
       },
       responsive: [
         {
@@ -226,7 +230,7 @@ function floatchart() {
         height: 320,
         type: 'donut'
       },
-      series: [40, 10, 15, 10],
+      series: [40, 20, 25, 15],
       colors: ['#4680FF', '#13c2c2', '#e58a00', '#dc2626'],
       labels: ['Total income', 'Total rent', 'Download', 'Views'],
       fill: {
@@ -252,7 +256,11 @@ function floatchart() {
         }
       },
       dataLabels: {
-        enabled: true
+        enabled: true,
+        style: {
+          fontSize: "16px",
+          marginTop: "10px",
+        }
       },
       responsive: [
         {
@@ -263,7 +271,7 @@ function floatchart() {
                 donut: {
                   size: '65%',
                   labels: {
-                    show: true
+                    show: true,
                   }
                 }
               }
