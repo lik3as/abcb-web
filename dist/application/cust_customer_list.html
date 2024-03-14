@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- [Head] start -->
+  <!-- [Head] start -->
 
-<head>
-  <title>Customer List | Able Pro Dashboard Template</title>
-  <!-- [Meta] -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="description" content="Able Pro is trending dashboard template made using Bootstrap 5 design framework. Able Pro is available in Bootstrap, React, CodeIgniter, Angular,  and .net Technologies.">
-  <meta name="keywords" content="Bootstrap admin template, Dashboard UI Kit, Dashboard Template, Backend Panel, react dashboard, angular dashboard">
-  <meta name="author" content="Phoenixcoded">
+  <head>
+    <title>Customer List | Able Pro Dashboard Template</title>
+    <!-- [Meta] -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Able Pro is trending dashboard template made using Bootstrap 5 design framework. Able Pro is available in Bootstrap, React, CodeIgniter, Angular,  and .net Technologies.">
+    <meta name="keywords" content="Bootstrap admin template, Dashboard UI Kit, Dashboard Template, Backend Panel, react dashboard, angular dashboard">
+    <meta name="author" content="Phoenixcoded">
 
-  <!-- [Favicon] icon -->
-  <link rel="icon" href="../assets/images/favicon.svg" type="image/x-icon"> <!-- [Font] Family -->
+    <!-- [Favicon] icon -->
+    <link rel="icon" href="../assets/images/favicon.svg" type="image/x-icon"> <!-- [Font] Family -->
 <link rel="stylesheet" href="../assets/fonts/inter/inter.css" id="main-font-link" />
 <!-- [Tabler Icons] https://tablericons.com -->
 <link rel="stylesheet" href="../assets/fonts/tabler-icons.min.css" >
@@ -72,12 +72,12 @@
   })(window, document, 'clarity', 'script', 'gkn6wuhrtb');
 </script>
 
-</head>
-<!-- [Head] end -->
-<!-- [Body] Start -->
+  </head>
+  <!-- [Head] end -->
+  <!-- [Body] Start -->
 
-<body data-pc-preset="preset-1" data-pc-sidebar-caption="true" data-pc-direction="ltr" data-pc-theme_contrast="" data-pc-theme="light">
-  <!-- [ Pre-loader ] start -->
+  <body data-pc-preset="preset-1" data-pc-sidebar-caption="true" data-pc-direction="ltr" data-pc-theme_contrast="" data-pc-theme="light">
+    <!-- [ Pre-loader ] start -->
 <div class="loader-bg">
   <div class="loader-track">
     <div class="loader-fill"></div>
@@ -766,376 +766,1085 @@
 
 
 
-  <!-- [ Main Content ] start -->
-  <div class="pc-container">
-    <div class="pc-content">
-      <!-- [ breadcrumb ] start -->
-      <div class="page-header">
-        <div class="page-block">
-          <div class="row align-items-center">
-            <div class="col-md-12">
-              <ul class="breadcrumb">
-                <li class="breadcrumb-item"><a href="../dashboard/index.html">Home</a></li>
-                <li class="breadcrumb-item"><a href="javascript: void(0)">Meus Clientes</a></li>
-                <li class="breadcrumb-item" aria-current="page">Lista</li>
-              </ul>
-            </div>
-            <div class="col-md-12">
-              <div class="page-header-title">
-                <h2 class="mb-0">Lista</h2>
+    <!-- [ Main Content ] start -->
+    <div class="pc-container">
+      <div class="pc-content">
+        <!-- [ breadcrumb ] start -->
+        <div class="page-header">
+          <div class="page-block">
+            <div class="row align-items-center">
+              <div class="col-md-12">
+                <ul class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="../dashboard/index.html">Home</a></li>
+                  <li class="breadcrumb-item"><a href="javascript: void(0)">Meus Clientes</a></li>
+                  <li class="breadcrumb-item" aria-current="page">Consulta</li>
+                </ul>
+              </div>
+              <div class="col-md-12">
+                <div class="page-header-title">
+                  <h2 class="mb-0">Consulta</h2>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <!-- [ breadcrumb ] end -->
+        <!-- [ breadcrumb ] end -->
 
-      <!-- [ Main Content ] start -->
-      <div class="row">
-        <!-- [ sample-page ] start -->
-        <div class="col-sm-12">
-          <div class="card table-card">
-            <div class="card-body p-3">
-              <div class="table-responsive">
-                <table class="table table-hover" id="pc-dt-simple">
-                  <thead>
-                    <tr>
-                      <th>#</th>
-                      <th>Cliente</th>
-                      <th>Telefone</th>
-                      <th>Estado</th>
-                      <th>Nacionaliadade</th>
-                      <th>Sexo</th>
-                      <th class="text-center">Opções</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>179</td>
-                      <td>
+        <!-- [ Main Content ] start -->
+        <div class="row">
+          <!-- [ sample-page ] start -->
+          <div class="col-sm-12">
+            <div class="card table-card">
+              <div class="card-body p-3">
+                <div class="table-responsive">
+                  <table class="table table-hover" id="pc-dt-simple">
+                    <thead>
+                      <tr>
+                        <th>Cliente</th>
+                        <th>CPF</th>
+                        <th>Benefício</th>
+                        <th>Status</th>
+                        <th class="text-center">Opções</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <!-- First -->
+                      <tr>
+                        <td>
+                          <div class="row">
+                            <div class="col-auto">
+                              <img src="../assets/images/user/avatar-3.jpg" alt="user-image"
+                                class="wid-40 rounded-circle">
+                            </div>
+                            <div class="col">
+                              <h6 class="mb-0">Vanda Aparecida da Silva</h6>
+                              <p class="text-muted f-12 mb-0">MU*** BG***</p>
+                            </div>
+                          </div>
+                        </td>
+                        <td>115.197.878-71</td>
+                        <td>1550343898</td>
+                        <td><span class="badge bg-light-success rounded-pill f-12">OK</span></td>
+                        <td class="text-center">
+                          <ul class="list-inline me-auto mb-0">
+                            <li class="list-inline-item align-bottom" data-bs-toggle="tooltip" title="View">
+                              <a href="#" class="avtar avtar-xs btn-link-secondary btn-pc-default" data-bs-toggle="modal"
+                                data-bs-target="#customer-modal">
+                                <i class="ti ti-eye f-18"></i>
+                              </a>
+                            </li>
+                            <!-- Will not be used
+                            <li class="list-inline-item align-bottom" data-bs-toggle="tooltip" title="Edit">
+                              <a href="#" class="avtar avtar-xs btn-link-success btn-pc-default" data-bs-toggle="modal"
+                                data-bs-target="#customer-edit_add-modal">
+                                <i class="ti ti-edit-circle f-18"></i>
+                              </a>
+                            </li>
+                            -->
+                          </ul>
+                        </td>
+                      </tr>
+                      <!-- Second -->
+                      <tr>
+                        <td>
+                          <div class="row">
+                            <div class="col-auto">
+                              <img src="../assets/images/user/avatar-2.jpg" alt="user-image"
+                                class="wid-40 rounded-circle">
+                            </div>
+                            <div class="col">
+                              <h6 class="mb-0">Evanilda Aparecida Ferreira Da Silva</h6>
+                              <p class="text-muted f-12 mb-0">MU*** BG***</p>
+                            </div>
+                          </div>
+                        </td>
+                        <td>071.868.698-58</td>
+                        <td>1651616156</td>
+                        <td><span class="badge bg-light-success rounded-pill f-12">OK</span></td>
+                        <td class="text-center">
+                          <ul class="list-inline me-auto mb-0">
+                            <li class="list-inline-item align-bottom" data-bs-toggle="tooltip" title="View">
+                              <a href="#" class="avtar avtar-xs btn-link-secondary btn-pc-default" data-bs-toggle="modal"
+                                data-bs-target="#customer-modal-2">
+                                <i class="ti ti-eye f-18"></i>
+                              </a>
+                            </li>
+                            <!-- Will not be used
+                            <li class="list-inline-item align-bottom" data-bs-toggle="tooltip" title="Edit">
+                              <a href="#" class="avtar avtar-xs btn-link-success btn-pc-default" data-bs-toggle="modal"
+                                data-bs-target="#customer-edit_add-modal">
+                                <i class="ti ti-edit-circle f-18"></i>
+                              </a>
+                            </li>
+                            -->
+                          </ul>
+                        </td>
+                      </tr>
+                      <!-- Third -->
+                      <tr>
+                        <td>
+                          <div class="row">
+                            <div class="col-auto">
+                              <img src="../assets/images/user/avatar-9.jpg" alt="user-image"
+                                class="wid-40 rounded-circle">
+                            </div>
+                            <div class="col">
+                              <h6 class="mb-0">Ivanilda Aparecida Da Silva Pintor</h6>
+                              <p class="text-muted f-12 mb-0">MU*** BG***</p>
+                            </div>
+                          </div>
+                        </td>
+                        <td>071.868.698-58</td>
+                        <td>1870971563</td>
+                        <td><span class="badge bg-light-success rounded-pill f-12">OK</span></td>
+                        <td class="text-center">
+                          <ul class="list-inline me-auto mb-0">
+                            <li class="list-inline-item align-bottom" data-bs-toggle="tooltip" title="View">
+                              <a href="#" class="avtar avtar-xs btn-link-secondary btn-pc-default" data-bs-toggle="modal"
+                                data-bs-target="#customer-modal-3">
+                                <i class="ti ti-eye f-18"></i>
+                              </a>
+                            </li>
+                            <!-- Will not be used
+                            <li class="list-inline-item align-bottom" data-bs-toggle="tooltip" title="Edit">
+                              <a href="#" class="avtar avtar-xs btn-link-success btn-pc-default" data-bs-toggle="modal"
+                                data-bs-target="#customer-edit_add-modal">
+                                <i class="ti ti-edit-circle f-18"></i>
+                              </a>
+                            </li>
+                            -->
+                          </ul>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- [ sample-page ] end -->
+        </div>
+        <!-- [ Main Content ] end -->
+      </div>
+    </div>
+    <!-- First Modal -->
+    <div class="modal fade" id="customer-modal" data-bs-keyboard="false" tabindex="-1" 
+      aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header border-0 pb-0">
+            <h5 class="mb-0">Detalhes do Cliente</h5>
+            <a href="#" class="avtar avtar-s btn-link-danger btn-pc-default" data-bs-dismiss="modal">
+              <i class="ti ti-x f-20"></i>
+            </a>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-lg-4">
+                <div class="card">
+                  <div class="card-body position-relative px-3">
+                    <div class="position-absolute end-0 top-0 p-3">
+                      <span class="badge bg-light-success">OK</span>
+                    </div>
+                    <div class="text-center mt-3">
+                      <div class="chat-avtar d-inline-flex mx-auto">
+                        <img class="rounded-circle img-fluid wid-60" src="../assets/images/user/avatar-3.jpg"
+                          alt="User image">
+                      </div>
+                      <h5 class="mb-0">Vanda A. da Silva</h5>
+                      <p class="text-muted text-sm">115.197.878-71</p>
+                      <hr class="my-3 border border-secondary-subtle">
+                      <div class="row g-3">
+                        <div class="col-4">
+                          <h5 class="mb-0">0</h5>
+                          <small class="text-muted">Tickets</small>  
+                        </div>
+                        <div class="col-4 border border-top-0 border-bottom-0">
+                          <h5 class="mb-0">62</h5>
+                          <small class="text-muted">Idade</small>
+                        </div>
+                        <div class="col-4">
+                          <h5 class="mb-0">R$0,00</h5>
+                          <small class="text-muted">Descontos</small>
+                        </div>
+                      </div>
+                      <hr class="my-3 border border-secondary-subtle">
+                      <div class="d-inline-flex align-items-center justify-content-between w-100 mb-3">
+                        <i class="ti ti-phone"></i>
+                        <p class="mb-0">Não Informado</p>
+                      </div>
+                      <div class="d-inline-flex align-items-center justify-content-between w-100 mb-1">
+                        <i class="ti ti-map-pin"></i>
+                        <p class="mb-0">Brasil</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-8">
+                <div class="card">
+                  <div class="card-header">
+                    <h5>Detalhes Pessoais</h5>
+                  </div>
+                  <div class="card-body">
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item px-0 pt-0">
                         <div class="row">
-                          <div class="col-auto">
-                            <img src="../assets/images/user/avatar-3.jpg" alt="user-image"
-                              class="wid-40 rounded-circle">
-                          </div>
-                          <div class="col">
+                          <div class="col-md-6">
+                            <p class="mb-1 text-muted">Nome Completo</p>
                             <h6 class="mb-0">Vanda Aparecida da Silva</h6>
-                            <p class="text-muted f-12 mb-0">@gmail.com</p>
                           </div>
                         </div>
-                      </td>
-                      <td>Não Informado</td>
-                      <td>SP</td>
-                      <td>Brasil</td>
-                      <td><span class="badge bg-light-danger rounded-pill f-12">Não Informado</span> </td>
-                      <td class="text-center">
-                        <ul class="list-inline me-auto mb-0">
-                          <li class="list-inline-item align-bottom" data-bs-toggle="tooltip" title="View">
-                            <a href="#" class="avtar avtar-xs btn-link-secondary btn-pc-default" data-bs-toggle="modal"
-                              data-bs-target="#customer-modal">
-                              <i class="ti ti-eye f-18"></i>
-                            </a>
-                          </li>
-                          <li class="list-inline-item align-bottom" data-bs-toggle="tooltip" title="Edit">
-                            <a href="#" class="avtar avtar-xs btn-link-success btn-pc-default" data-bs-toggle="modal"
-                              data-bs-target="#customer-edit_add-modal">
-                              <i class="ti ti-edit-circle f-18"></i>
-                            </a>
-                          </li>
-                          <li class="list-inline-item align-bottom" data-bs-toggle="tooltip" title="Delete">
-                            <a href="#" class="avtar avtar-xs btn-link-danger btn-pc-default">
-                              <i class="ti ti-trash f-18"></i>
-                            </a>
-                          </li>
-                        </ul>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- [ sample-page ] end -->
-      </div>
-      <!-- [ Main Content ] end -->
-    </div>
-  </div>
-  <div class="modal fade" id="customer-modal" data-bs-keyboard="false" tabindex="-1" 
-    aria-hidden="true">
-    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
-      <div class="modal-content">
-        <div class="modal-header border-0 pb-0">
-          <h5 class="mb-0">Detalhes do Cliente</h5>
-          <a href="#" class="avtar avtar-s btn-link-danger btn-pc-default" data-bs-dismiss="modal">
-            <i class="ti ti-x f-20"></i>
-          </a>
-        </div>
-        <div class="modal-body">
-          <div class="row">
-            <div class="col-lg-4">
-              <div class="card">
-                <div class="card-body position-relative">
-                  <div class="position-absolute end-0 top-0 p-3">
-                    <span class="badge bg-danger">Não Informado</span>
-                  </div>
-                  <div class="text-center mt-3">
-                    <div class="chat-avtar d-inline-flex mx-auto">
-                      <img class="rounded-circle img-fluid wid-60" src="../assets/images/user/avatar-3.jpg"
-                        alt="User image">
-                    </div>
-                    <h5 class="mb-0">Vanda A. da Silva</h5>
-                    <p class="text-muted text-sm">Brasileira</p>
-                    <hr class="my-3 border border-secondary-subtle">
-                    <div class="row g-3">
-                      <div class="col-4">
-                      </div>
-                      <div class="col-4 border border-top-0 border-bottom-0">
-                        <h5 class="mb-0">62</h5>
-                        <small class="text-muted">Idade</small>
-                      </div>
-                      <div class="col-4">
-                      </div>
-                    </div>
-                    <hr class="my-3 border border-secondary-subtle">
-                    <div class="d-inline-flex align-items-center justify-content-between w-100 mb-3">
-                      <i class="ti ti-phone"></i>
-                      <p class="mb-0">Não Informado</p>
-                    </div>
-                    <div class="d-inline-flex align-items-center justify-content-between w-100 mb-1">
-                      <i class="ti ti-map-pin"></i>
-                      <p class="mb-0">Brasil</p>
-                    </div>
+                      </li>
+                      <li class="list-group-item px-0">
+                        <div class="row">
+                          <div class="col-md-6">
+                            <p class="mb-1 text-muted">CPF</p>
+                            <h6 class="mb-0">115.197.878-71</h6>
+                          </div>
+                          <div class="col-md-6">
+                            <p class="mb-1 text-muted">RG</p>
+                            <h6 class="mb-0">Não Informado</h6>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="list-group-item px-0 pb-0">
+                        <p class="mb-1 text-muted">Endereço</p>
+                        <h6 class="mb-4">São Paulo, Brasil</h6>
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-lg-8">
-              <div class="card">
-                <div class="card-header">
-                  <h5>Detalhes Pessoais</h5>
-                </div>
-                <div class="card-body">
-                  <ul class="list-group list-group-flush">
-                    <li class="list-group-item px-0 pt-0">
-                      <div class="row">
-                        <div class="col-md-6">
-                          <p class="mb-1 text-muted">Nome Completo</p>
-                          <h6 class="mb-0">Vanda Aparecida da Silva</h6>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="list-group-item px-0">
-                      <div class="row">
-                        <div class="col-md-6">
-                          <p class="mb-1 text-muted">CPF</p>
-                          <h6 class="mb-0">115.197.878-71</h6>
-                        </div>
-                        <div class="col-md-6">
-                          <p class="mb-1 text-muted">RG</p>
-                          <h6 class="mb-0">Não Informado</h6>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="list-group-item px-0 pb-0">
-                      <p class="mb-1 text-muted">Endereço</p>
-                      <h6 class="mb-4">São Paulo, Brasil</h6>
-                    </li>
-                  </ul>
-                </div>
+            <div class="card">
+              <div class="card-header">
+                <h4>Documentos<span class="badge bg-warning ms-2">Pendente</span></h4>  
               </div>
-              </div>
-              <div class="card mx-2">
-                <div class="card-header">
-                  <h5>Documentos</h5>
-                  <span class="badge bg-warning">Pendente</span>
-                </div>
-              </div>
-              <div class="card mx-2">
-                <div class="card-header">
-                  <h5>Benefícios</h5>
-                  <span class="badge bg-success">Consignação Concluída</span>
-                </div>
-                <div class="card-body">
-                  <ul class="list-group list-group-flush">
-                    <li class="list-group-item px-0 pt-0">
-                      <div class="row">
-                        <div class="col-md-3">
-                          <p class="mb-1 text-muted">Número</p>
-                          <h6 class="mb-0">1550343898</h6>
-                        </div>
-                        <div class="col-md-3">
-                          <p class="mb-1 text-muted">DIB</p>
-                          <h6 class="mb-0">Não Informado</h6>
-                        </div>
-                        <div class="col-md-3">
-                          <p class="mb-1 text-muted">Espécie</p>
-                          <h6 class="mb-0">21</h6>
-                        </div>
-                        <div class="col-md-3">
-                          <p class="mb-1 text-muted">Banco</p>
-                          <h6 class="mb-0">Não Informado</h6>
-                        </div>
+              <div class="card-body mb-0">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item px-0">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <p class="mb-1 text-muted">CPF do Cliente</p>
+                        <h6 class="mb-0 border rounded p-3">11519787871</h6>
                       </div>
-                    </li>
-                    <li class="list-group-item px-0">
-                      <div class="row">
-                        <div class="col-md-3">
-                          <p class="mb-1 text-muted">Agência</p>
-                          <h6 class="mb-0">Não Informado</h6>
-                        </div>
-                        <div class="col-md-3">
-                          <p class="mb-1 text-muted">Conta</p>
-                          <h6 class="mb-0">Não Informado</h6>
-                        </div>
-                        <div class="col-md-3">
-                          <p class="mb-1 text-muted">Valor do Benefício</p>
-                          <h6 class="mb-0">Não Informado</h6>
-                        </div>
-                        <div class="col-md-3">
-                          <p class="mb-1 text-muted">Data de Filiação</p>
-                          <h6 class="mb-0">2023-12-27</h6>
-                        </div>
+                      <div class="col-md-6 form-group">
+                        <label class="form-label mb-1 text-muted">Tipo de Documento</label>
+                        <select class="form-select">
+                          <option><h6>CPF<h6></option>
+                          <option><h6>RG<h6></option>
+                          <option><h6>CNH<h6></option>
+                          <option><h6>Outro<h6></option>
+                        </select>
+                        <!--<p class="mb-1 text-muted">Tipo de Documento</p>-->
+                        <!--<h6 class="mb-0">Selecione o Tipo de Documento</h6>-->
                       </div>
-                    </li>
-                  </ul>
-                </div>
-              </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item px-0">
+                    <label for="documentFile" class="form-label text-muted">Selecione o documento desejado</label>
+                    <input class="form-control" type="file" id="documentFile">
+                  </li>
 
-              <div class="card mx-2">
-                <div class="card-header">
-                  <h5>Descontos &nbsp;<span class="badge bg-danger">1</span></h5>
-                </div>
-                <div class="card-body">
-                  <ul class="list-group list-group-flush">
-                    <li class="list-group-item px-0">
-                      <div class="row">
-                        <div class="col-md-3">
-                          <p class="mb-1 text-muted">#</p>
-                          <h6 class="mb-0">1</h6>
-                        </div>
-                        <div class="col-md-3">
-                          <p class="mb-1 text-muted">Benefício</p>
-                          <h6 class="mb-0">1550343898</h6>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="list-group-item px-0">
-                      <div class="row">
-                        <div class="col-md-3">
-                          <p class="mb-1 text-muted">Data</p>
-                          <h6 class="mb-0">2024-02-01</h6>
-                        </div>
-                        <div class="col-md-3">
-                          <p class="mb-1 text-muted">Valor</p>
-                          <h6 class="mb-0">R$77,86</h6>
-                        </div>
-                        <div class="col-md-3">
-                          <p class="mb-1 text-muted">Conciliado</p>
-                          <h6 class="mb-0">Não Informado</h6>
-                        </div>
-                        <div class="col-md-3">
-                          <p class="mb-1 text-muted">Ticket</p>
-                          <h6 class="mb-0">Não Informado</h6>
-                        </div>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="modal fade" id="customer-edit_add-modal" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
-    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="mb-0">Editar Cliente</h5>
-          <a href="#" class="avtar avtar-s btn-link-danger btn-pc-default" data-bs-dismiss="modal">
-            <i class="ti ti-x f-20"></i>
-          </a>
-        </div>
-        <div class="modal-body">
-          <div class="row">
-            <div class="col-sm-3 text-center">
-              <div class="chat-avtar d-inline-flex mx-auto">
-                <img class="rounded-circle img-fluid wid-70" src="../assets/images/user/avatar-5.jpg"
-                  alt="User image">
+                </ul>
+
               </div>
             </div>
-            <div class="col-sm-9">
-              <div class="form-group">
-                <label class="form-label">Nome</label>
-                <input type="text" class="form-control" placeholder="Nome">
+            <div class="card">
+              <div class="card-header">
+                <h4>Benefícios<span class="badge bg-success ms-2">Consignação Concluída</span></h4>
               </div>
-              <div class="form-group">
-                <label class="form-label">Email</label>
-                <input type="text" class="form-control" placeholder="Email">
+              <div class="card-body">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item px-0 pt-0">
+                    <div class="row">
+                      <div class="col-md-3">
+                        <p class="mb-1 text-muted">Número</p>
+                        <h6 class="mb-0">1550343898</h6>
+                      </div>
+                      <div class="col-md-3">
+                        <p class="mb-1 text-muted">DIB</p>
+                        <h6 class="mb-0">Não Informado</h6>
+                      </div>
+                      <div class="col-md-3">
+                        <p class="mb-1 text-muted">Espécie</p>
+                        <h6 class="mb-0">21</h6>
+                      </div>
+                      <div class="col-md-3">
+                        <p class="mb-1 text-muted">Banco</p>
+                        <h6 class="mb-0">Não Informado</h6>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item px-0">
+                    <div class="row">
+                      <div class="col-md-3">
+                        <p class="mb-1 text-muted">Agência</p>
+                        <h6 class="mb-0">Não Informado</h6>
+                      </div>
+                      <div class="col-md-3">
+                        <p class="mb-1 text-muted">Conta</p>
+                        <h6 class="mb-0">Não Informado</h6>
+                      </div>
+                      <div class="col-md-3">
+                        <p class="mb-1 text-muted">Valor do Benefício</p>
+                        <h6 class="mb-0">Não Informado</h6>
+                      </div>
+                      <div class="col-md-3">
+                        <p class="mb-1 text-muted">Data de Filiação</p>
+                        <h6 class="mb-0">2023-12-27</h6>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
               </div>
-              <div class="form-group">
-                <label class="form-label">Sexo</label>
-                <select class="form-select">
-                  <option>Selecione o Sexo do Cliente</option>
-                  <option>Não Informado</option>
-                  <option>Masculino</option>
-                  <option>Feminino</option>
-                </select>
+            </div>
+
+            <div class="card">
+              <div class="card-header">
+                <h4>Descontos<span class="badge bg-danger ms-2">0</span></h4>
               </div>
-              <div class="form-group">
-                <label class="form-label" >Localização</label>
-                <textarea class="form-control" rows="3" placeholder="Digite a Localização"></textarea>
+              <div class="card-body">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item px-0">
+                    <div class="row">
+                      <div class="col-md-2">
+                        <p class="mb-1 text-muted">#</p>
+                        <h6 class="mb-0"></h6>
+                      </div>
+                      <div class="col-md-2">
+                        <p class="mb-1 text-muted">Benefício</p>
+                        <h6 class="mb-0"></h6>
+                      </div>
+                      <div class="col-md-2">
+                        <p class="mb-1 text-muted">Data</p>
+                        <h6 class="mb-0"></h6>
+                      </div>
+                      <div class="col-md-2">
+                        <p class="mb-1 text-muted">Valor</p>
+                        <h6 class="mb-0"></h6>
+                      </div>
+                      <div class="col-md-2">
+                        <p class="mb-1 text-muted">Conciliado</p>
+                        <h6 class="mb-0"></h6>
+                      </div>
+                      <div class="col-md-2">
+                        <p class="mb-1 text-muted">Ticket</p>
+                        <h6 class="mb-0"></h6>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
               </div>
-              <div class="form-check form-switch d-flex align-items-center justify-content-between p-0">
-                <label class="form-check-label h5 pe-3 mb-0" for="customSwitchemlnot1">Tornar informações de contato públicas
-                  <span class="text-muted w-75 d-block text-sm f-w-400 mt-2">Habilita a todos que vêem seu perfil checar suas informações de contato</span>
-                </label>
-                <input class="form-check-input h4 m-0 position-relative flex-shrink-0" type="checkbox" id="customSwitchemlnot1" checked="">
+            </div>
+            
+            <div class="card">
+              <div class="card-header">
+                <h4>Logs<span class="badge bg-danger ms-2">2</span></h4>
               </div>
-              <hr class="my-3 border border-secondary-subtle">
-              <div class="form-check form-switch d-flex align-items-center justify-content-between p-0">
-                <label class="form-check-label h5 pe-3 mb-0" for="customSwitchemlnot2">Disponível para contratação
-                  <span class="text-muted w-75 d-block text-sm f-w-400 mt-2">Ativar isso avisa aos colegas de trabalho que está pronto para trabalhar em mais projetos</span>
-                </label>
-                <input class="form-check-input h4 m-0 position-relative flex-shrink-0" type="checkbox" id="customSwitchemlnot2" checked="">
+              <div class="card-body">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item px-0">
+                    <div class="row mb-3">
+                      <div class="col-md-3">
+                        <p class="mb-1 text-muted mb-1">Usuário</p>
+                        <div>
+                          <img class="wid-40 rounded-circle" src="../../assets/images/user/avatar-1.jpg" alt="user-image">
+                          <span class="badge bg-primary">IGOR</span>
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <p class="mb-1 text-muted">Data e Hora</p>
+                        <h6 class="mb-0">2024-02-12 11:32:38</h6>
+                      </div>
+                      <div class="col-md-3">
+                        <p class="mb-1 text-muted">Descrição</p>
+                        <h6 class="mb-0">Cliente registrado (Aguardando inclusão ao INSS)</h6>
+                      </div>
+                      <div class="col-md-3">
+                        <p class="mb-1 text-muted">NB</p>
+                        <h6 class="mb-0">1550343898</h6>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-3">
+                        <p class="mb-1 text-muted mb-1">Usuário</p>
+                        <div>
+                          <img class="wid-40 rounded-circle" src="../../assets/images/user/avatar-1.jpg" alt="user-image">
+                          <span class="badge bg-primary">IGOR</span>
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <p class="mb-1 text-muted">Data e Hora</p>
+                        <h6 class="mb-0">2024-02-12 23:56:10</h6>
+                      </div>
+                      <div class="col-md-3">
+                        <p class="mb-1 text-muted">Descrição</p>
+                        <h6 class="mb-0">Cliente ativo ((OK) Consignação incluída)</h6>
+                      </div>
+                      <div class="col-md-3">
+                        <p class="mb-1 text-muted">NB</p>
+                        <h6 class="mb-0">1550343898</h6>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
         </div>
-        <div class="modal-footer justify-content-between">
-          <ul class="list-inline me-auto mb-0">
-            <li class="list-inline-item align-bottom">
-              <a href="#" class="avtar avtar-s btn-link-danger btn-pc-default w-sm-auto" data-bs-toggle="tooltip" title="Delete">
-                <i class="ti ti-trash f-18"></i>
-              </a>
-            </li>
-          </ul>
-          <div class="flex-grow-1 text-end">
-            <button type="button" class="btn btn-link-danger btn-pc-default" data-bs-dismiss="modal"></button>
-            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Salvar</button>
+      </div>
+    </div>
+
+    <!-- Second Modal -->
+    <div class="modal fade" id="customer-modal-2" data-bs-keyboard="false" tabindex="-1" 
+      aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header border-0 pb-0">
+            <h5 class="mb-0">Detalhes do Cliente</h5>
+            <a href="#" class="avtar avtar-s btn-link-danger btn-pc-default" data-bs-dismiss="modal">
+              <i class="ti ti-x f-20"></i>
+            </a>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-lg-4">
+                <div class="card">
+                  <div class="card-body position-relative px-3">
+                    <div class="position-absolute end-0 top-0 p-3">
+                      <span class="badge bg-light-success">OK</span>
+                    </div>
+                    <div class="text-center mt-3">
+                      <div class="chat-avtar d-inline-flex mx-auto">
+                        <img class="rounded-circle img-fluid wid-60" src="../assets/images/user/avatar-2.jpg"
+                          alt="User image">
+                      </div>
+                      <h5 class="mb-0">Evanilda Aparecida Ferreia Da Silva</h5>
+                      <p class="text-muted text-sm">071.868.698-58</p>
+                      <hr class="my-3 border border-secondary-subtle">
+                      <div class="row g-3">
+                        <div class="col-4">
+                          <h5 class="mb-0">0</h5>
+                          <small class="text-muted">Tickets</small>  
+                        </div>
+                        <div class="col-4 border border-top-0 border-bottom-0">
+                          <h5 class="mb-0">63</h5>
+                          <small class="text-muted">Idade</small>
+                        </div>
+                        <div class="col-4">
+                          <h5 class="mb-0">R$145,52</h5>
+                          <small class="text-muted">Descontos</small>
+                        </div>
+                      </div>
+                      <hr class="my-3 border border-secondary-subtle">
+                      <div class="d-inline-flex align-items-center justify-content-between w-100 mb-3">
+                        <i class="ti ti-phone"></i>
+                        <p class="mb-0">Não Informado</p>
+                      </div>
+                      <div class="d-inline-flex align-items-center justify-content-between w-100 mb-1">
+                        <i class="ti ti-map-pin"></i>
+                        <p class="mb-0">Brasil</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-8">
+                <div class="card">
+                  <div class="card-header">
+                    <h5>Detalhes Pessoais</h5>
+                  </div>
+                  <div class="card-body">
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item px-0 pt-0">
+                        <div class="row">
+                          <div class="col-md-6">
+                            <p class="mb-1 text-muted">Nome Completo</p>
+                            <h6 class="mb-0">Evanilda Aparecida Ferreia Da Silva</h6>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="list-group-item px-0">
+                        <div class="row">
+                          <div class="col-md-6">
+                            <p class="mb-1 text-muted">CPF</p>
+                            <h6 class="mb-0">071.868.698-58</h6>
+                          </div>
+                          <div class="col-md-6">
+                            <p class="mb-1 text-muted">RG</p>
+                            <h6 class="mb-0">Não Informado</h6>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="list-group-item px-0 pb-0">
+                        <p class="mb-1 text-muted">Endereço</p>
+                        <h6 class="mb-4">São Paulo, Brasil</h6>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header">
+                <h4>Documentos<span class="badge bg-warning ms-2">Pendente</span></h4>  
+              </div>
+              <div class="card-body mb-0">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item px-0">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <p class="mb-1 text-muted">CPF do Cliente</p>
+                        <h6 class="mb-0 border rounded p-3">07186869858</h6>
+                      </div>
+                      <div class="col-md-6 form-group">
+                        <label class="form-label mb-1 text-muted">Tipo de Documento</label>
+                        <select class="form-select">
+                          <option><h6>CPF<h6></option>
+                          <option><h6>RG<h6></option>
+                          <option><h6>CNH<h6></option>
+                          <option><h6>Outro<h6></option>
+                        </select>
+                        <!--<p class="mb-1 text-muted">Tipo de Documento</p>-->
+                        <!--<h6 class="mb-0">Selecione o Tipo de Documento</h6>-->
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item px-0">
+                    <label for="documentFile" class="form-label text-muted">Selecione o documento desejado</label>
+                    <input class="form-control" type="file" id="documentFile">
+                  </li>
+
+                </ul>
+
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header">
+                <h4>Benefícios<span class="badge bg-success ms-2">Consignação Concluída</span></h4>
+              </div>
+              <div class="card-body">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item px-0 pt-0">
+                    <div class="row">
+                      <div class="col-md-3">
+                        <p class="mb-1 text-muted">Número</p>
+                        <h6 class="mb-0">1651616156</h6>
+                      </div>
+                      <div class="col-md-3">
+                        <p class="mb-1 text-muted">DIB</p>
+                        <h6 class="mb-0">Não Informado</h6>
+                      </div>
+                      <div class="col-md-3">
+                        <p class="mb-1 text-muted">Espécie</p>
+                        <h6 class="mb-0">42</h6>
+                      </div>
+                      <div class="col-md-3">
+                        <p class="mb-1 text-muted">Banco</p>
+                        <h6 class="mb-0">389</h6>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item px-0">
+                    <div class="row">
+                      <div class="col-md-3">
+                        <p class="mb-1 text-muted">Agência</p>
+                        <h6 class="mb-0">237</h6>
+                      </div>
+                      <div class="col-md-3">
+                        <p class="mb-1 text-muted">Conta</p>
+                        <h6 class="mb-0">10254640</h6>
+                      </div>
+                      <div class="col-md-3">
+                        <p class="mb-1 text-muted">Valor do Benefício</p>
+                        <h6 class="mb-0">Não Informado</h6>
+                      </div>
+                      <div class="col-md-3">
+                        <p class="mb-1 text-muted">Data de Filiação</p>
+                        <h6 class="mb-0">2023-11-27</h6>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header">
+                <h4>Descontos<span class="badge bg-danger ms-2">0</span></h4>
+              </div>
+              <div class="card-body">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item px-0">
+                    <div class="row mb-2">
+                      <div class="col-md-2">
+                        <p class="mb-1 text-muted">#</p>
+                        <h6 class="mb-0">1</h6>
+                      </div>
+                      <div class="col-md-2">
+                        <p class="mb-1 text-muted">Benefício</p>
+                        <h6 class="mb-0">1651616156</h6>
+                      </div>
+                      <div class="col-md-2">
+                        <p class="mb-1 text-muted">Data</p>
+                        <h6 class="mb-0">2024-01-01</h6>
+                      </div>
+                      <div class="col-md-2">
+                        <p class="mb-1 text-muted">Valor</p>
+                        <h6 class="mb-0">R$72.76</h6>
+                      </div>
+                      <div class="col-md-2">
+                        <p class="mb-1 text-muted">Conciliado</p>
+                        <h6 class="mb-0"></h6>
+                      </div>
+                      <div class="col-md-2">
+                        <p class="mb-1 text-muted">Ticket</p>
+                        <h6 class="mb-0"></h6>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-md-2">
+                        <p class="mb-1 text-muted">#</p>
+                        <h6 class="mb-0">2</h6>
+                      </div>
+                      <div class="col-md-2">
+                        <p class="mb-1 text-muted">Benefício</p>
+                        <h6 class="mb-0">1651616156</h6>
+                      </div>
+                      <div class="col-md-2">
+                        <p class="mb-1 text-muted">Data</p>
+                        <h6 class="mb-0">2024-01-01</h6>
+                      </div>
+                      <div class="col-md-2">
+                        <p class="mb-1 text-muted">Valor</p>
+                        <h6 class="mb-0">R$72.76</h6>
+                      </div>
+                      <div class="col-md-2">
+                        <p class="mb-1 text-muted">Conciliado</p>
+                        <h6 class="mb-0"></h6>
+                      </div>
+                      <div class="col-md-2">
+                        <p class="mb-1 text-muted">Ticket</p>
+                        <h6 class="mb-0"></h6>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            
+            <div class="card">
+              <div class="card-header">
+                <h4>Logs<span class="badge bg-danger ms-2">2</span></h4>
+              </div>
+              <div class="card-body">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item px-0">
+                    <div class="row mb-3">
+                      <div class="col-md-3">
+                        <p class="mb-1 text-muted mb-1">Usuário</p>
+                        <div>
+                          <img class="wid-40 rounded-circle" src="../../assets/images/user/avatar-1.jpg" alt="user-image">
+                          <span class="badge bg-primary">IGOR</span>
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <p class="mb-1 text-muted">Data e Hora</p>
+                        <h6 class="mb-0">2024-02-12 11:32:38</h6>
+                      </div>
+                      <div class="col-md-3">
+                        <p class="mb-1 text-muted">Descrição</p>
+                        <h6 class="mb-0">Cliente registrado (Aguardando inclusão ao INSS)</h6>
+                      </div>
+                      <div class="col-md-3">
+                        <p class="mb-1 text-muted">NB</p>
+                        <h6 class="mb-0">1651616156</h6>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-3">
+                        <p class="mb-1 text-muted mb-1">Usuário</p>
+                        <div>
+                          <img class="wid-40 rounded-circle" src="../../assets/images/user/avatar-1.jpg" alt="user-image">
+                          <span class="badge bg-primary">IGOR</span>
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <p class="mb-1 text-muted">Data e Hora</p>
+                        <h6 class="mb-0">2024-02-02 00:07:38</h6>
+                      </div>
+                      <div class="col-md-3">
+                        <p class="mb-1 text-muted">Descrição</p>
+                        <h6 class="mb-0">Cliente com erro (Outros erros)</h6>
+                      </div>
+                      <div class="col-md-3">
+                        <p class="mb-1 text-muted">NB</p>
+                        <h6 class="mb-0">1651616156</h6>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <!-- [ Main Content ] end -->
-  <footer class="pc-footer">
-    <div class="footer-wrapper container-fluid">
-      <div class="row">
-        <div class="col my-1">
-          <p class="m-0"
-            >Power Bi Tec </p
-          >
-        </div>
-        <div class="col-auto my-1">
-          <ul class="list-inline footer-link mb-0">
-            <li class="list-inline-item"><a href="#" target="_blank">Suporte</a></li>
-          </ul>
+    
+    <!-- Third Modal -->
+    <div class="modal fade" id="customer-modal-3" data-bs-keyboard="false" tabindex="-1" 
+      aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header border-0 pb-0">
+            <h5 class="mb-0">Detalhes do Cliente</h5>
+            <a href="#" class="avtar avtar-s btn-link-danger btn-pc-default" data-bs-dismiss="modal">
+              <i class="ti ti-x f-20"></i>
+            </a>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-lg-4">
+                <div class="card">
+                  <div class="card-body position-relative px-3">
+                    <div class="position-absolute end-0 top-0 p-3">
+                      <span class="badge bg-light-success">OK</span>
+                    </div>
+                    <div class="text-center mt-3">
+                      <div class="chat-avtar d-inline-flex mx-auto">
+                        <img class="rounded-circle img-fluid wid-60" src="../assets/images/user/avatar-9.jpg"
+                          alt="User image">
+                      </div>
+                      <h5 class="mb-0">Ivanilda Aparecida Da Silva Pintor</h5>
+                      <p class="text-muted text-sm">446.498.869-53</p>
+                      <hr class="my-3 border border-secondary-subtle">
+                      <div class="row g-3">
+                        <div class="col-4">
+                          <h5 class="mb-0">0</h5>
+                          <small class="text-muted">Tickets</small>  
+                        </div>
+                        <div class="col-4 border border-top-0 border-bottom-0">
+                          <h5 class="mb-0">63</h5>
+                          <small class="text-muted">Idade</small>
+                        </div>
+                        <div class="col-4">
+                          <h5 class="mb-0">R$00,00</h5>
+                          <small class="text-muted">Descontos</small>
+                        </div>
+                      </div>
+                      <hr class="my-3 border border-secondary-subtle">
+                      <div class="d-inline-flex align-items-center justify-content-between w-100 mb-3">
+                        <i class="ti ti-phone"></i>
+                        <p class="mb-0">Não Informado</p>
+                      </div>
+                      <div class="d-inline-flex align-items-center justify-content-between w-100 mb-1">
+                        <i class="ti ti-map-pin"></i>
+                        <p class="mb-0">Brasil</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-8">
+                <div class="card">
+                  <div class="card-header">
+                    <h5>Detalhes Pessoais</h5>
+                  </div>
+                  <div class="card-body">
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item px-0 pt-0">
+                        <div class="row">
+                          <div class="col-md-6">
+                            <p class="mb-1 text-muted">Nome Completo</p>
+                            <h6 class="mb-0">Evanilda Aparecida Ferreia Da Silva</h6>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="list-group-item px-0">
+                        <div class="row">
+                          <div class="col-md-6">
+                            <p class="mb-1 text-muted">CPF</p>
+                            <h6 class="mb-0">071.868.698-58</h6>
+                          </div>
+                          <div class="col-md-6">
+                            <p class="mb-1 text-muted">RG</p>
+                            <h6 class="mb-0">Não Informado</h6>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="list-group-item px-0 pb-0">
+                        <p class="mb-1 text-muted">Endereço</p>
+                        <h6 class="mb-4">São Paulo, Brasil</h6>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header">
+                <h4>Documentos<span class="badge bg-warning ms-2">Pendente</span></h4>  
+              </div>
+              <div class="card-body mb-0">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item px-0">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <p class="mb-1 text-muted">CPF do Cliente</p>
+                        <h6 class="mb-0 border rounded p-3">07186869858</h6>
+                      </div>
+                      <div class="col-md-6 form-group">
+                        <label class="form-label mb-1 text-muted">Tipo de Documento</label>
+                        <select class="form-select">
+                          <option><h6>CPF<h6></option>
+                          <option><h6>RG<h6></option>
+                          <option><h6>CNH<h6></option>
+                          <option><h6>Outro<h6></option>
+                        </select>
+                        <!--<p class="mb-1 text-muted">Tipo de Documento</p>-->
+                        <!--<h6 class="mb-0">Selecione o Tipo de Documento</h6>-->
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item px-0">
+                    <label for="documentFile" class="form-label text-muted">Selecione o documento desejado</label>
+                    <input class="form-control" type="file" id="documentFile">
+                  </li>
+
+                </ul>
+
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header">
+                <h4>Benefícios<span class="badge bg-success ms-2">Consignação Concluída</span></h4>
+              </div>
+              <div class="card-body">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item px-0 pt-0">
+                    <div class="row">
+                      <div class="col-md-3">
+                        <p class="mb-1 text-muted">Número</p>
+                        <h6 class="mb-0">1870971563</h6>
+                      </div>
+                      <div class="col-md-3">
+                        <p class="mb-1 text-muted">DIB</p>
+                        <h6 class="mb-0">Não Informado</h6>
+                      </div>
+                      <div class="col-md-3">
+                        <p class="mb-1 text-muted">Espécie</p>
+                        <h6 class="mb-0">42</h6>
+                      </div>
+                      <div class="col-md-3">
+                        <p class="mb-1 text-muted">Banco</p>
+                        <h6 class="mb-0">Não Informado</h6>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item px-0">
+                    <div class="row">
+                      <div class="col-md-3">
+                        <p class="mb-1 text-muted">Agência</p>
+                        <h6 class="mb-0">Não Informado</h6>
+                      </div>
+                      <div class="col-md-3">
+                        <p class="mb-1 text-muted">Conta</p>
+                        <h6 class="mb-0">Não Informado</h6>
+                      </div>
+                      <div class="col-md-3">
+                        <p class="mb-1 text-muted">Valor do Benefício</p>
+                        <h6 class="mb-0">Não Informado</h6>
+                      </div>
+                      <div class="col-md-3">
+                        <p class="mb-1 text-muted">Data de Filiação</p>
+                        <h6 class="mb-0">2023-12-02</h6>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header">
+                <h4>Descontos<span class="badge bg-danger ms-2">0</span></h4>
+              </div>
+              <div class="card-body">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item px-0">
+                    <div class="row mb-2">
+                      <div class="col-md-2">
+                        <p class="mb-1 text-muted">#</p>
+                      </div>
+                      <div class="col-md-2">
+                        <p class="mb-1 text-muted">Benefício</p>
+                      </div>
+                      <div class="col-md-2">
+                        <p class="mb-1 text-muted">Data</p>
+                      </div>
+                      <div class="col-md-2">
+                        <p class="mb-1 text-muted">Valor</p>
+                      </div>
+                      <div class="col-md-2">
+                        <p class="mb-1 text-muted">Conciliado</p>
+                      </div>
+                      <div class="col-md-2">
+                        <p class="mb-1 text-muted">Ticket</p>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            
+            <div class="card">
+              <div class="card-header">
+                <h4>Logs<span class="badge bg-danger ms-2">2</span></h4>
+              </div>
+              <div class="card-body">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item px-0">
+                    <div class="row mb-3">
+                      <div class="col-md-3">
+                        <p class="mb-1 text-muted mb-1">Usuário</p>
+                        <div>
+                          <img class="wid-40 rounded-circle" src="../../assets/images/user/avatar-1.jpg" alt="user-image">
+                          <span class="badge bg-primary">IGOR</span>
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <p class="mb-1 text-muted">Data e Hora</p>
+                        <h6 class="mb-0">2024-02-12 11:32:38</h6>
+                      </div>
+                      <div class="col-md-3">
+                        <p class="mb-1 text-muted">Descrição</p>
+                        <h6 class="mb-0">Cliente registrado (Aguardando inclusão ao INSS)</h6>
+                      </div>
+                      <div class="col-md-3">
+                        <p class="mb-1 text-muted">NB</p>
+                        <h6 class="mb-0">1651616156</h6>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-3">
+                        <p class="mb-1 text-muted mb-1">Usuário</p>
+                        <div>
+                          <img class="wid-40 rounded-circle" src="../../assets/images/user/avatar-1.jpg" alt="user-image">
+                          <span class="badge bg-primary">IGOR</span>
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <p class="mb-1 text-muted">Data e Hora</p>
+                        <h6 class="mb-0">2024-02-02 00:07:38</h6>
+                      </div>
+                      <div class="col-md-3">
+                        <p class="mb-1 text-muted">Descrição</p>
+                        <h6 class="mb-0">Cliente com erro (Outros erros)</h6>
+                      </div>
+                      <div class="col-md-3">
+                        <p class="mb-1 text-muted">NB</p>
+                        <h6 class="mb-0">1651616156</h6>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </footer>
+    <div class="modal fade" id="customer-edit_add-modal" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="mb-0">Editar Cliente</h5>
+            <a href="#" class="avtar avtar-s btn-link-danger btn-pc-default" data-bs-dismiss="modal">
+              <i class="ti ti-x f-20"></i>
+            </a>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-sm-3 text-center">
+                <div class="chat-avtar d-inline-flex mx-auto">
+                  <img class="rounded-circle img-fluid wid-70" src="../assets/images/user/avatar-5.jpg"
+                    alt="User image">
+                </div>
+              </div>
+              <div class="col-sm-9">
+                <div class="form-group">
+                  <label class="form-label">Nome</label>
+                  <input type="text" class="form-control" placeholder="Nome">
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Email</label>
+                  <input type="text" class="form-control" placeholder="Email">
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Sexo</label>
+                  <select class="form-select">
+                    <option>Selecione o Sexo do Cliente</option>
+                    <option>Não Informado</option>
+                    <option>Masculino</option>
+                    <option>Feminino</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" >Localização</label>
+                  <textarea class="form-control" rows="3" placeholder="Digite a Localização"></textarea>
+                </div>
+                <div class="form-check form-switch d-flex align-items-center justify-content-between p-0">
+                  <label class="form-check-label h5 pe-3 mb-0" for="customSwitchemlnot1">Tornar informações de contato públicas
+                    <span class="text-muted w-75 d-block text-sm f-w-400 mt-2">Habilita a todos que vêem seu perfil checar suas informações de contato</span>
+                  </label>
+                  <input class="form-check-input h4 m-0 position-relative flex-shrink-0" type="checkbox" id="customSwitchemlnot1" checked="">
+                </div>
+                <hr class="my-3 border border-secondary-subtle">
+                <div class="form-check form-switch d-flex align-items-center justify-content-between p-0">
+                  <label class="form-check-label h5 pe-3 mb-0" for="customSwitchemlnot2">Disponível para contratação
+                    <span class="text-muted w-75 d-block text-sm f-w-400 mt-2">Ativar isso avisa aos colegas de trabalho que está pronto para trabalhar em mais projetos</span>
+                  </label>
+                  <input class="form-check-input h4 m-0 position-relative flex-shrink-0" type="checkbox" id="customSwitchemlnot2" checked="">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer justify-content-between">
+            <ul class="list-inline me-auto mb-0">
+              <li class="list-inline-item align-bottom">
+                <a href="#" class="avtar avtar-s btn-link-danger btn-pc-default w-sm-auto" data-bs-toggle="tooltip" title="Delete">
+                  <i class="ti ti-trash f-18"></i>
+                </a>
+              </li>
+            </ul>
+            <div class="flex-grow-1 text-end">
+              <button type="button" class="btn btn-link-danger btn-pc-default" data-bs-dismiss="modal"></button>
+              <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Salvar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- [ Main Content ] end -->
+    <footer class="pc-footer">
+      <div class="footer-wrapper container-fluid">
+        <div class="row">
+          <div class="col my-1">
+            <p class="m-0"
+              >Power Bi Tec </p
+            >
+          </div>
+          <div class="col-auto my-1">
+            <ul class="list-inline footer-link mb-0">
+              <li class="list-inline-item"><a href="#" target="_blank">Suporte</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
  <!-- Required Js -->
 <script src="../assets/js/plugins/popper.min.js"></script>
 <script src="../assets/js/plugins/simplebar.min.js"></script>
@@ -1170,23 +1879,22 @@
 
 <script>preset_change("preset-1");</script>
 
-  <!-- [Page Specific JS] start -->
-  <script src="../assets/js/plugins/simple-datatables.js"></script>
-  <script>
-    const dataTable = new simpleDatatables.DataTable('#pc-dt-simple', {
-      sortable: false,
-      perPage: 5,
-      labels: {
-        placeholder: "Pesquisar",
-        searchTitle: "Procure os clientes",
-        perPage: "clientes por página",
-        info: "Exibindo {start} a {end} de {rows} clientes"
-      }
-    });
-  </script>
-  <!-- [Page Specific JS] end -->
-  
-</body>
-<!-- [Body] end -->
-
+    <!-- [Page Specific JS] start -->
+    <script src="../assets/js/plugins/simple-datatables.js"></script>
+    <script>
+      const dataTable = new simpleDatatables.DataTable('#pc-dt-simple', {
+        sortable: false,
+        perPage: 5,
+        labels: {
+          placeholder: "Pesquisar",
+          searchTitle: "Procure os clientes",
+          perPage: "clientes por página",
+          info: "Exibindo {start} a {end} de {rows} clientes"
+        }
+      });
+    </script>
+    <!-- [Page Specific JS] end -->
+    
+  </body>
+  <!-- [Body] end -->
 </html>
