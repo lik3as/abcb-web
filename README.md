@@ -1,2 +1,2 @@
 ## ABCB-WEB
-### Web application built by ABCB
+### Web application for ABCB
